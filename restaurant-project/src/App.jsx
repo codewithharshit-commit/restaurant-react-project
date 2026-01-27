@@ -8,6 +8,6 @@ function App() {
   )
 }
 
-export default App
+export default App;
 
 // https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/redux/loader.gif
