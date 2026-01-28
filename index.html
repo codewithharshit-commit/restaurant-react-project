@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-20">
+
+    <!-- Dropdown Wrapper -->
+    <div class="relative inline-block group">
+
+        <!-- Button -->
+        <button class="px-5 py-2 bg-blue-600 text-white rounded-md">
+            Menu
+        </button>
+
+        <!-- Dropdown -->
+        <div class="absolute left-0 mt-2 w-40 bg-white rounded-md shadow-lg
+             opacity-0 invisible translate-y-2
+             group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+             transition-all duration-300 ease-out">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Profile</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
