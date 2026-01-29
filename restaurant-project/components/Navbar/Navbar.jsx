@@ -13,7 +13,7 @@ const Navbar = () => {
   const [toggleMenu,setToggleMenu] = useState(false);
 
   return (
-  <nav className='app__navbar w-full bg-black-shade flex justify-between items-center h-[96px] px-30 text-white'>
+  <nav className='app__navbar w-full bg-[#0c0c0c] flex justify-between absolute items-center h-auto px-30  text-white'>
     <a className='app__navbar-logo w-[134px]'>
       <img className='w-full h-auto' src="https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/logo.svg" alt="app logo" />
     </a>
@@ -80,21 +80,19 @@ const Navbar = () => {
           <MdOutlineRestaurantMenu fontSize={27} className='overlay__close cursor-pointer hover:text-[#dcca86] ' onClick={()=>setToggleMenu(false)}/>
         </nav>
 
-        <ul className='h-[90vh] flex flex-col justify-center ml-[15px]'>
+        <ul className='h-[90vh] flex flex-col justify-center ml-[50px] pl-[50px]'>
           <li className='p__opensans '><a href="">Home</a> <MdKeyboardArrowRight/></li>
           <li className='p__opensans '><a href="">Pages</a><MdKeyboardArrowRight/></li>
           <li className='p__opensans '><a href="">Contact Us</a><MdKeyboardArrowRight/></li>
           <li className='p__opensans'><a href="">Blog</a><MdKeyboardArrowRight/></li>
         </ul>
       </div>)}
-     
     </div>
-
-    
-
   </nav>
 )};
 
 export default Navbar;
 
 //https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/pattern-bg.svg
+
+//https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/pattern-title.svg

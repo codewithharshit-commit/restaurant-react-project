@@ -1,0 +1,11 @@
+.p__cormorant {
+    font-family: "Cormorant Upright";
+    color: white;
+}
+
+.app__header_h1 {
+    font-size: 90px;
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    color: #dcca86;
+}
