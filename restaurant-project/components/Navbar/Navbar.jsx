@@ -7,6 +7,7 @@ import { MdKeyboardArrowRight } from "react-icons/md"
 
 import './Navbar.css';
 import "../../src/index.css"
+import "../../container/Header/Header.css"
 
 const Navbar = () => {
 

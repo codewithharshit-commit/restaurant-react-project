@@ -1,3 +1,50 @@
 .app__menu_button-text {
     font-family: "Cormorant Upright";
 }
+
+@media screen and (max-width:1460px) {
+    .section__padding {
+        padding: 0.5rem;
+        padding-bottom: 10rem;
+    }
+
+}
+
+@media screen and (max-width : 926px) {
+
+    .app__header {
+        height: 90vh;
+    }
+
+    .app__wrapper_img {
+        min-width: 300px;
+    }
+
+    .app__header_h1 {
+        font-size: 60px;
+        line-height: 57px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .app__navbar {
+        position: relative;
+    }
+
+    .app__header {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .app__wrapper_img {
+        margin-top: 20px;
+        max-width: 550px;
+        max-height: 300px;
+    }
+
+    .app__header_h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
