@@ -19,7 +19,7 @@ const Navbar = () => {
       <img className='w-full h-auto' src="https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/logo.svg" alt="app logo" />
     </a>
 
-    <ul className='app__navbar-links text-[#dcca86]  xl:text-[16px] flex items-center gap-6 relative  '>
+    <ul className='app__navbar-links text-[#dcca86]  xl:text-[16px] flex items-center gap-5 relative  '>
       <li className=' h-24 flex items-center group'><a href="#home">HOME </a> <span className='text-[30px]'><RiArrowDropDownLine /></span>
       <div className='absolute top-22 flex flex-col gap-6  bg-black w-75 p-5 
        translate-y-2 invisible opacity-0 pointer-events-none group-hover:pointer-events-auto
