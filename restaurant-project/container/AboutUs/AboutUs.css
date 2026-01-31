@@ -1,0 +1,14 @@
+.app__aboutUs_wrapper-section h1 {
+    font-family: "Cormorant Upright";
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.app__aboutUs_wrapper-section p {
+    color: #d0cfcfb8;
+    line-height: 1.66rem;
+}
+
+.app__aboutUs_knife {
+    min-width: 40px;
+}

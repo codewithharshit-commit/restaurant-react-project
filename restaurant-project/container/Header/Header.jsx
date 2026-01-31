@@ -11,10 +11,15 @@ const Header = () => (
   <div className='app__header app__wrapper section__padding bg-[#0c0c0c] h-screen' >
     <div className="app__wrapper_info w-full   ">
       <SubHeading title="The Key to Fine Dining"/>
-      <p className='text-[#aaaaaa] max-w-112.5 mt-6'>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-      <div className='app__menu_btn bg-[#dcca86] inline-block  cursor-pointer px-[32px] py-[8px] mt-10 group border-2 border-[#dcca86] hover:bg-black duration-200 transition-all '>
-        <span className='mr-4 font-bold group-hover:text-[#dcca86]'>Explore Menu</span>
-        <BsArrowRight className='group-hover:text-[#dcca86] inline'/>
+      <p className='p__text text-[#aaaaaa] max-w-112.5 mt-6'>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+      <div className='relative app__menu_btn overflow-hidden bg-[rgb(220,202,134)] inline-block  cursor-pointer px-8 py-2 mt-10 group border-2 border-[#dcca86] '>
+        <span
+    class="absolute left-0 top-0 h-full w-0 bg-black
+           transition-all duration-600 linear
+           group-hover:w-full"
+  ></span>
+        <span className='relative mr-4 z-10 font-bold group-hover:text-[#dcca86]'>Explore Menu</span>
+        <BsArrowRight className='relative group-hover:text-[#dcca86] inline z-10'/>
       </div>
     </div>
 
