@@ -1,0 +1,33 @@
+.app__booking_table h1,
+h2 {
+    font-family: "Cormoramt Upright";
+}
+
+.app__booking_table h1 {
+    font-size: 4rem;
+}
+
+.select_container {
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 50px;
+    display: flex;
+    flex: 1;
+    transition: border 0.6s;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select_container:hover {
+    border: 1px solid #dcca86;
+    cursor: pointer;
+}
+
+.select_container select {
+    appearance: none;
+    color: #aaaaaa;
+}
+
+.select_container ul li:hover {
+    color: #dcca86;
+}

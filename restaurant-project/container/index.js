@@ -7,9 +7,11 @@ import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Laurels from './Laurels/Laurels';
 import SpecialMenu from './Menu/SpecialMenu';
+import Booking from './Booking/Booking';
 
 export {
   AboutUs,
+  Booking,
   Chef,
   FindUs,
   Footer,

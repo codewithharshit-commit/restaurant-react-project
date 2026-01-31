@@ -19,7 +19,7 @@ const AboutUs = () => (
           </p>
           <div className='relative app__menu_btn overflow-hidden bg-[rgb(220,202,134)] inline-block  cursor-pointer px-8 py-2 mt-10 group border-2 border-[#dcca86] '>
                   <span
-              class="absolute left-0 top-0 h-full w-0 bg-black
+              className="absolute left-0 top-0 h-full w-0 bg-black
                      transition-all duration-600 linear
                      group-hover:w-full"
             ></span>
@@ -27,7 +27,7 @@ const AboutUs = () => (
                 </div>
         </div>
 
-        <div className='ml-10 mr-10 w-[76px] h-auto'>
+        <div className='ml-20 mr-20 w-[76px] h-auto'>
           <img className='app__aboutUs_knife' src={images.knife} alt="knife" />
         </div>
 
@@ -39,7 +39,7 @@ const AboutUs = () => (
           </p>
          <div className='relative app__menu_btn overflow-hidden bg-[rgb(220,202,134)] inline-block  cursor-pointer px-8 py-2 mt-10 group border-2 border-[#dcca86] '>
                   <span
-              class="absolute left-0 top-0 h-full w-0 bg-black
+              className="absolute left-0 top-0 h-full w-0 bg-black
                      transition-all duration-600 linear
                      group-hover:w-full"
             ></span>
