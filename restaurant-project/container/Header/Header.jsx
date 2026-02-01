@@ -10,7 +10,7 @@ import { SubHeading } from '../../components';
 const Header = () => (
   <div className='app__header app__wrapper section__padding bg-[#0c0c0c] h-screen' >
     <div className="app__wrapper_info w-full   ">
-      <SubHeading title="The Key to Fine Dining"/>
+      <SubHeading title="The Key to Fine Dining" heading="Chase the new Flavour"/>
       <p className='p__text text-[#aaaaaa] max-w-112.5 mt-6'>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
       <div className='relative app__menu_btn overflow-hidden bg-[rgb(220,202,134)] inline-block  cursor-pointer px-8 py-2 mt-10 group border-2 border-[#dcca86] '>
         <span

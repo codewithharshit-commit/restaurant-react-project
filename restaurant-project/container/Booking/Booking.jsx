@@ -7,7 +7,25 @@ import "../../src/index.css"
 
 const Booking = () => {
 
-    const [toggle , setToggle] = useState(false);
+    const [toggle , setToggleMenu] = useState(false);
+    const selectRef = useRef(null);
+
+    useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        selectRef.current &&
+        !selectRef.current.contains(e.target)
+      ) {
+        setToggleMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
     
     return (<div className="app__booking_section bg-[#0c0c0c] h-[90vh] relative overflow-hidden">
         <img className="absolute w-full h-auto" src="https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/pattern-bg.svg" alt="booking bg" />
@@ -20,13 +38,8 @@ const Booking = () => {
             <h1 className="text-[#dcca86] text-center">Book A Table</h1>
 
             <div className="app__booking_select_container flex justify-around gap-8 mb-15 mt-20">
-                <div className="select_container relative border-2 border-[#444444]" onClick={()=>{setToggle(true)}}>
-                    <select className="text-white" name="noOfPersons" id="persons">
-                        <option value="1">1 Person</option>
-                        <option value="1">One</option>
-                        <option value="1">Two</option>
-                        <option value="1">Three</option>
-                    </select>
+                <div ref={selectRef} className="select_container relative border-2 border-[#444444]" onClick={()=>{setToggleMenu(true)}}>
+                    <div className="text-[#aaa]">1 Person</div>
                     <IoMdArrowDropdown color="white"/>
                     
                     {toggle && <ul className="text-[#aaaa] absolute border-2 border-[#dcca86] w-full h-auto left-0 bg-black flex flex-col gap-4

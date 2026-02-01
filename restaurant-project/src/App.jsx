@@ -1,5 +1,5 @@
 import {Navbar} from "../components"
-import {Header,AboutUs,Booking} from "../container";
+import {Header,AboutUs,Booking, SpecialMenu} from "../container";
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Header/>
       <AboutUs/>
       <Booking/>
+      <SpecialMenu/>
     </>
   )
 }

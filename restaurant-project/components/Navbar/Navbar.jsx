@@ -12,12 +12,14 @@ import "../../container/Header/Header.css"
 const Navbar = () => {
 
   const [toggleMenu,setToggleMenu] = useState(false);
-  const inputRef = useRef(null);
+  const [input,setInput] = useState(false);
+  const inputRef = useRef(null); //{ curret:null }
+  
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (inputRef.current && !inputRef.current.contains(e.target)) {
-        setToggleMenu(false);
+        setInput(false);
       }
     };
 
@@ -72,8 +74,8 @@ const Navbar = () => {
     </ul>
 
     <div className='app__nav-searchbar flex items-center'>
-      <div  className={`search_box flex items-center  ${toggleMenu ? "border-b-1 border-gray-500": 'border-none'}   h-15 `}>
-        <input onClick={()=>setToggleMenu(true)} ref={inputRef} type="text" className="text-white outline-none" placeholder='Search Website' 
+      <div  className={`search_box flex items-center  ${input ? "border-b-1 border-gray-500": 'border-none'}   h-15 `}>
+        <input onClick={()=>setInput(true)} ref={inputRef} type="text" className="text-white outline-none" placeholder='Search Website' 
         />
         <span className='text-xl font-bold'>< IoSearch/></span>
       </div>
