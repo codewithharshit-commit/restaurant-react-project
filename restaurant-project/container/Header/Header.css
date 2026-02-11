@@ -16,9 +16,7 @@
         height: 90vh;
     }
 
-    .app__wrapper_img {
-        min-width: 300px;
-    }
+
 
     .app__header_h1 {
         font-size: 60px;
@@ -38,12 +36,7 @@
         height: 80vh;
     }
 
-    .app__wrapper_img {
-        margin-top: 10px;
-        min-width: 200px;
-        max-width: 550px;
-        max-height: 300px;
-    }
+
 
     .app__header_h1 {
         font-size: 40px;
