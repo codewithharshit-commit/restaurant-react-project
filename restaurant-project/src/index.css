@@ -2,7 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Fira+Code:wght@300..700&family=Heebo:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 .section__padding {
-    padding: 4rem 8rem;
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section__padding {
+        padding: 4rem 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section__padding {
+        padding: 4rem 8rem;
+    }
 }
 
 .flex__center {
