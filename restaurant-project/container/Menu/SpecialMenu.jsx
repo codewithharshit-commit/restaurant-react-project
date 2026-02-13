@@ -19,8 +19,8 @@ const SpecialMenu = () => (
           ))}
       </div>
 
-      <div className='app__specialMenu-img hidden lg:flex items-center justify-center'>
-        <img className='w-[410px] h-auto' src={images.menu} alt="menu icon" />
+      <div className='app__specialMenu-img flex items-center justify-center w-full lg:w-auto'>
+        <img className='w-full max-w-[410px] min-w-[200px] h-auto' src={images.menu} alt="menu icon" />
       </div>
 
       <div className='app__specialMenu-cocktails flex-1 flex flex-col w-full'>
