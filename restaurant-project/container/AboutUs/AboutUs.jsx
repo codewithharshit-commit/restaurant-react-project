@@ -4,16 +4,16 @@ import './AboutUs.css';
 import '../../src/index.css'
 
 const AboutUs = () => (
-  <div style={{backgroundImage:`URL(${images.bg})`}} className='section__padding relative flex h-screen bg-cover bg-center'>
-    <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-      <img className='w-97.75 h-103.75' src={images.G} alt="about_us-G" />
+  <div style={{backgroundImage:`URL(${images.bg})`}} className='section__padding relative flex min-h-screen py-16 lg:py-0 lg:h-screen bg-cover bg-center'>
+    <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 lg:opacity-100'>
+      <img className='w-48 h-52 lg:w-97.75 lg:h-103.75' src={images.G} alt="about_us-G" />
     </div>
 
-    <div className='app__aboutUs_wrapper flex items-center justify-center z-30 w-full '>
-        <div className='app__aboutUs_wrapper-section flex flex-col items-end max-w-[524px]'>
+    <div className='app__aboutUs_wrapper flex flex-col lg:flex-row items-center justify-center z-30 w-full gap-8 lg:gap-0'>
+        <div className='app__aboutUs_wrapper-section flex flex-col items-start lg:items-end w-full max-w-full lg:max-w-[524px]'>
           <h1 className='text-[#dcca86]'>About Us</h1>
           <img src={images.spoon} alt="spoon" />
-          <p className='text-white text-right mt-10 mb-10'>
+          <p className='text-white text-left lg:text-right mt-10 mb-10'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.
             Know More
           </p>
@@ -27,14 +27,14 @@ const AboutUs = () => (
                 </div>
         </div>
 
-        <div className='ml-20 mr-20 w-[76px] h-auto'>
+        <div className='hidden lg:block lg:ml-20 lg:mr-20 w-[76px] h-auto'>
           <img className='app__aboutUs_knife' src={images.knife} alt="knife" />
         </div>
 
-        <div className='app__aboutUs_wrapper-section max-w-[524px]'>
+        <div className='app__aboutUs_wrapper-section w-full max-w-full lg:max-w-[524px]'>
           <h1 className='text-[#dcca86]'>History</h1>
           <img className="app__aboutUs_knife scale-x-[-1]" src={images.spoon} alt="spoon" />
-          <p className='text-white  mt-10 mb-10'>
+          <p className='text-white mt-10 mb-10'>
             Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.
           </p>
          <div className='relative app__menu_btn overflow-hidden bg-[rgb(220,202,134)] inline-block  cursor-pointer px-8 py-2 mt-10 group border-2 border-[#dcca86] '>

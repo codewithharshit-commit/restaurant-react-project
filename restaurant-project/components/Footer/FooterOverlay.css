@@ -1,0 +1,12 @@
+@media screen and (max-width:860px) {
+    .sections {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0px;
+        gap: 1;
+    }
+
+    .boxx {
+        height: 100vh;
+    }
+}

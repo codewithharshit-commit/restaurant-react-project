@@ -1,3 +1,13 @@
 .heading {
     font-family: "Cormorant Upright";
 }
+
+@media screen and (max-width: 800px) {
+    .app__wrapper {
+        flex-direction: column;
+    }
+
+    .app__wrapper_img {
+        margin: 0 0 2rem 0;
+    }
+}

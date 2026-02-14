@@ -3,11 +3,9 @@
 }
 
 @media screen and (max-width:1460px) {
-    .section__padding {
-        padding: 0.5rem;
-        padding-bottom: 10rem;
+    .app__header {
+        padding: 10px;
     }
-
 }
 
 @media screen and (max-width : 926px) {
@@ -16,15 +14,13 @@
         height: 90vh;
     }
 
-
-
     .app__header_h1 {
         font-size: 60px;
         line-height: 57px;
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:800px) {
     .app__navbar {
         position: relative;
     }
@@ -34,9 +30,18 @@
         flex-direction: column;
         overflow: hidden;
         height: 80vh;
+        position: relative;
+    }
+
+    .app__menu_btn {
+        margin-top: 1rem;
     }
 
 
+    .img {
+        width: 100%;
+        height: 300px;
+    }
 
     .app__header_h1 {
         font-size: 40px;

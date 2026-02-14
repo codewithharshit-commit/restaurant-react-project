@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const [toggleMenu,setToggleMenu] = useState(false);
   const [input,setInput] = useState(false);
-  const inputRef = useRef(null); //{ curret:null }
+  const inputRef = useRef(null); //{ curret:null }q
   
 
   useEffect(() => {
@@ -29,12 +29,12 @@ const Navbar = () => {
 
 
   return (
-  <nav className='app__navbar w-full bg-[#0c0c0c] flex justify-between absolute items-center h-auto px-30  text-white'>
+  <nav className='app__navbar w-full bg-[#0c0c0c] flex justify-between absolute items-center h-auto px-30  text-white '>
     <a className='app__navbar-logo w-[134px]'>
       <img className='w-full h-auto' src="https://wordpress.iqonic.design/product/wp-free/geritcht/wp-content/themes/geritcht-theme/assets/images/logo.svg" alt="app logo" />
     </a>
 
-    <ul className='app__navbar-links text-[#dcca86]  xl:text-[16px] flex items-center gap-5 relative  '>
+    <ul className='app__navbar-links text-[#dcca86]  xl:text-[16px] flex items-center gap-5 relative  z-100 '>
       <li className=' h-24 flex items-center group'><a href="#home">HOME </a> <span className='text-[30px]'><RiArrowDropDownLine /></span>
       <div className='absolute top-22 flex flex-col gap-6  bg-black w-75 p-5 
        translate-y-2 invisible opacity-0 pointer-events-none group-hover:pointer-events-auto
@@ -73,8 +73,8 @@ const Navbar = () => {
       </div></li>
     </ul>
 
-    <div className='app__nav-searchbar flex items-center'>
-      <div  className={`search_box flex items-center  ${input ? "border-b-1 border-gray-500": 'border-none'}   h-15 `}>
+    <div className='app__nav-searchbar flex items-center '>
+      <div  className={`search_box flex items-center   ${input ? "border-b-1 border-gray-500": 'border-none'}   h-15 `}>
         <input onClick={()=>setInput(true)} ref={inputRef} type="text" className="text-white outline-none" placeholder='Search Website' 
         />
         <span className='text-xl font-bold'>< IoSearch/></span>
@@ -97,7 +97,7 @@ const Navbar = () => {
           <MdOutlineRestaurantMenu fontSize={27} className='overlay__close cursor-pointer hover:text-[#dcca86] ' onClick={()=>setToggleMenu(false)}/>
         </nav>
 
-        <ul className='h-[90vh] flex flex-col justify-center ml-[50px] pl-[50px]'>
+        <ul className='h-[90vh] flex flex-col justify-center ml-[50px] pl-[50px] z-1000'>
           <li className='p__opensans '><a href="">Home</a> <MdKeyboardArrowRight/></li>
           <li className='p__opensans '><a href="">Pages</a><MdKeyboardArrowRight/></li>
           <li className='p__opensans '><a href="">Contact Us</a><MdKeyboardArrowRight/></li>
